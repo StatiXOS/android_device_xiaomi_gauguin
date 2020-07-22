@@ -23,6 +23,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.enable_hwc_vds=1
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.incremental.enable=1
+
 # Priv-app permission
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
