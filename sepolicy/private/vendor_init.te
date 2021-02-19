@@ -1,0 +1,2 @@
+allow vendor_init persist_debug_prop:file read;
+allow vendor_init system_file:file getattr;
