@@ -1,1 +1,2 @@
 type sysfs_kgsl, sysfs_type,fs_type;
+type vendor_pd_locater_dbg_prop, property_type;
