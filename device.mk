@@ -133,7 +133,7 @@ PRODUCT_USES_QCOM_HARDWARE := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.gauguin
+    android.hardware.power-service.gauguin
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
