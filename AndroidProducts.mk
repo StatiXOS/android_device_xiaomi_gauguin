@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_gauguin.mk
+    $(LOCAL_DIR)/statix_gauguin.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_gauguin-user \
-    dot_gauguin-userdebug \
-    dot_gauguin-eng
+    statix_gauguin-user \
+    statix_gauguin-userdebug \
+    statix_gauguin-eng
