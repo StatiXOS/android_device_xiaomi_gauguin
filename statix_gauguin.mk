@@ -9,6 +9,7 @@ $(call inherit-product, device/xiaomi/gauguin/device.mk)
 
 # Inherit some common StatixOS stuff.
 $(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
