@@ -140,6 +140,10 @@ PRODUCT_PACKAGES += \
 -include $(LOCAL_PATH)/product_prop.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# QTI Components
+TARGET_COMMON_QTI_COMPONENTS := \
+    telephony
+
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_USES_RECOVERY_AS_BOOT := false
