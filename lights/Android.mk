@@ -2,43 +2,38 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := android.hardware.light@2.0-service.xiaomi_gauguin
-LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE := android.hardware.light-service.qti-gauguin
+LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/bin
 LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_MODULE_STEM := android.hardware.light@2.0-service
+LOCAL_INSTALLED_MODULE_STEM := android.hardware.lights-service.qti
 
-LOCAL_SRC_FILES := \
-    service.cpp \
-    Light.cpp
 
 LOCAL_REQUIRED_MODULES := \
-    android.hardware.light@2.0-service.xiaomi_gauguin.rc
+    android.hardware.lights-service.gauguin.rc
 
 LOCAL_SHARED_LIBRARIES := \
-    libhardware \
-    libhidlbase \
-    libhidltransport \
-    liblog \
-    libhwbinder \
-    android.hardware.light@2.0
+        libbase \
+        libhardware \
+        libbinder_ndk \
+        android.hardware.light-ndk_platform
 
-LOCAL_STATIC_LIBRARIES := \
-    libbase \
-    libutils
+LOCAL_SRC_FILES := \
+        Light.cpp \
+        service.cpp
 
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := android.hardware.light@2.0-service.xiaomi_gauguin.rc
+LOCAL_MODULE := android.hardware.lights-service.gauguin.rc
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init
-LOCAL_MODULE_STEM := android.hardware.light@2.0-service.rc
+LOCAL_MODULE_STEM := android.hardware.lights-qti.rc
 
-LOCAL_SRC_FILES := android.hardware.light@2.0-service.xiaomi_gauguin.rc
+LOCAL_SRC_FILES := android.hardware.lights-service.gauguin.rc
 
 include $(BUILD_PREBUILT)
