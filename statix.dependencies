@@ -1,0 +1,16 @@
+[
+   {
+      "repository":"android_vendor_xiaomi_gauguin",
+      "target_path":"vendor/xiaomi/gauguin"
+   },
+   {
+      "repository":"android_kernel_xiaomi_gauguin",
+      "target_path":"kernel/xiaomi/gauguin"
+   },
+   {
+      "repository":"LineageOS/android_packages_resources_devicesettings",
+      "target_path":"packages/resources/devicesettings",
+      "branch":"lineage-18.1",
+      "remote":"github"
+   }
+]
