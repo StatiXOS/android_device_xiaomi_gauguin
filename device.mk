@@ -159,7 +159,7 @@ TARGET_USES_MKE2FS := true
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+    $(LOCAL_PATH)
 
 # Telephony
 PRODUCT_PACKAGES += \
